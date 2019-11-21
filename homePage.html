@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styleHome.css">
+
+    <script src="videos.js"></script>
+
+    <!--Video-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+</head>
+
+
+<!-- Main content and container for header and movies display-->
+<main id="main" class="smaller">
+    <div class="header gradient">
+        <div class="inner_content">
+            <div class="content">
+                <h2 id="hi">Hi there,</h2>
+                <img id="image" src="https://www.themoviedb.org/assets/2/v4/marketing/deadpool-06f2a06d7a418ec887300397b6861383bf1e3b72f604ddd5f75bce170e81dce9.png"
+                    width="902" height="298">
+
+                <h3>let's chose a movie</h3>
+            </div>
+        </div>
+    </div>
+</main>
+
+<body>
+    <div class="container">
+        
+            <ul class="films"></ul>
+
+        
+    </div>
+    <!-- Buttons under each movie -->
+    <div class="flexbox">
+        <a class="popup-youtube" href="https://www.youtube.com/watch?v=D86RtevtfrA">
+            <button type="button" class="button">Trailer</button>
+        </a>
+        <a class="popup-youtube" href="http://www.youtube.com/watch?v=3-fiwBPyAa4">
+            <button type="button" class="button">Trailer</button>
+        </a>
+        <a class="popup-youtube" href="https://www.youtube.com/watch?v=rgXplohCw5o">
+            <button type="button" class="button">Trailer</button>
+        </a>
+        <a class="popup-youtube" href="https://www.youtube.com/watch?v=TcMBFSGVi1c">
+            <button type="button" class="button">Trailer</button>
+        </a>
+        <a class="popup-youtube" href="https://www.youtube.com/watch?v=zyYgDtY2AMY">
+            <button type="button" class="button">Trailer</button>
+        </a>
+
+        <!-- Video popUp -->
+        <script>
+            $(function () {
+                $('.popup-youtube').magnificPopup({
+                    disableOn: 700,
+                    type: 'iframe',
+                    mainClass: 'mfp-fade',
+                    removalDelay: 160,
+                    preloader: false,
+                    fixedContentPos: false
+                });
+            });
+        </script>
+    </div>
+
+
+
+    <!-- Search redirecting to search page -->
+    <main id="main" class="smaller">
+        <div class="header gradient">
+            <div class="inner_content">
+                <div class="content">
+                    <h2 id="hi">Still looking?</h2>
+                    <div class="flexbox">
+                        <a href="search.html">
+                            <button type="button" class="button" id="searchbtn">Search</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+</body>
+
+</html>

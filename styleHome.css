@@ -1,0 +1,144 @@
+/*gradient header*/
+div.header.gradient {
+    width: 100%;
+    background-image: radial-gradient(at 25% top, rgba(50, 17, 44, 1) 0%, rgba(10, 21, 38, 1) 40%);
+    
+    z-index: 0;
+}
+
+
+
+/*specifying position and color to the element*/
+div.header {
+    background-position: 0px 0px;
+    background-color: #0a1526;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+div {
+    display: block;
+}
+
+/* Small devices (portrait tablets and large phones, 500px and up to 960px) */
+@media (max-width: 960px) and (min-width: 501px) {
+    div.header.gradient{
+        width: 100%;
+    }
+    #hi{
+        font-size:30px;
+        line-height: 50px;
+    }
+    .container{
+        width: 10%;
+    }
+
+    .films{
+
+        padding: 10%;
+    }
+}
+
+
+
+/*styling of h2*/
+#hi {
+    display: block;
+    font-size: 60px;
+    margin-block-start: 10px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family:'Shrikhand', cursive ;
+    line-height: 100px;
+    font-weight: normal;
+   
+}
+/*styling of h3*/
+h3 {
+    display: block;
+    font-size: 20px;
+    font-family: 'Montserrat' , regular;
+    
+}
+/*color, aligning, padding of div elements*/
+div.header div.inner_content div.content {
+    color: #fff;
+    padding: 10px 0 30px 0;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+ /*making the grid, movie container, poster and plot */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    text-align: center;
+    margin: 0 auto;
+    font-family: Arial;
+  }
+  
+  .films li {
+    width: 220px;
+    list-style-type: none;
+    padding: 20px;
+   
+  }
+  
+  .films li p {
+    width: 100%;
+  }
+  
+  .films li img {
+    width: 200px;
+    height: 300px;
+    padding: 2px;
+   
+  }
+
+
+  
+  .films {
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+  }
+  
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 2px;
+      padding: 15px;
+  }
+
+  /*Video button and popup style*/
+
+  .flexbox {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.button {
+	display: inline-block;
+    padding: 10px 10px;
+    margin-left:90px;
+	margin-right: 90px;
+	background-color: #0a1526;
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+
+#searchbtn{
+
+display: inline-block;
+margin-left: 360px;
+font-size: 18px;
+}
+
+
